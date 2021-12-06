@@ -1,0 +1,275 @@
+player = new JFrame();
+		player.getContentPane().setBackground(Color.decode("#F5CDDE"));
+		player.setBackground(Color.decode("#F5CDDE"));
+		player.setResizable(false);
+		player.setIconImage(Toolkit.getDefaultToolkit()
+				.getImage("E:\\Engginearing\\SAKEC\\SEM 3\\Java Mini Project\\favico\\icon.png"));
+		player.setBounds(100, 100, 516, 563);
+		player.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		player.getContentPane().setLayout(null);
+
+		title.setAlignment(Label.CENTER);
+		title.setFont(new Font("Century", Font.PLAIN, 40));
+		title.setBounds(75, 45, 350, 55);
+		player.getContentPane().add(title);
+
+		
+		btnHome.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				player.dispose();
+				homePage.main(null);
+			}
+		});
+		btnHome.setBackground(Color.decode("#E2BEF1"));
+		btnHome.setFont(new Font("Century", Font.PLAIN, 30));
+		btnHome.setBounds(350, 120, 115, 45);
+		player.getContentPane().add(btnHome);
+
+		
+		btn1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (btn1.getLabel() == "") {
+					move = setLable(btn1, move);
+					board.playBoard(1, move);
+					isWin = board.checkBoard();
+					if (isWin != ' ') {
+						Win(isWin);
+					}
+				}
+			}
+		});
+		btn1.setBackground(Color.decode("#87dce6"));
+		btn1.setFont(new Font("Century", Font.PLAIN, 50));
+		btn1.setBounds(94, 190, 100, 100);
+		player.getContentPane().add(btn1);
+
+		//Button btn2 = new Button("");
+		btn2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (btn2.getLabel() == "") {
+					move = setLable(btn2, move);
+					board.playBoard(2, move);
+					isWin = board.checkBoard();
+					if (isWin != ' ')
+						Win(isWin);
+				}
+			}
+		});
+		btn2.setBackground(Color.PINK);
+		btn2.setFont(new Font("Century", Font.PLAIN, 50));
+		btn2.setBounds(200, 190, 100, 100);
+		player.getContentPane().add(btn2);
+
+		//Button btn3 = new Button("");
+		btn3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (btn3.getLabel() == "") {
+					move = setLable(btn3, move);
+					board.playBoard(3, move);
+					isWin = board.checkBoard();
+					if (isWin != ' ')
+						Win(isWin);
+				}
+			}
+		});
+		btn3.setBackground(Color.decode("#87dce6"));
+		btn3.setFont(new Font("Century", Font.PLAIN, 50));
+		btn3.setBounds(306, 190, 100, 100);
+		player.getContentPane().add(btn3);
+
+		//Button btn4 = new Button("");
+		btn4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (btn4.getLabel() == "") {
+					move = setLable(btn4, move);
+					board.playBoard(4, move);
+					isWin = board.checkBoard();
+					if (isWin != ' ')
+						Win(isWin);
+				}
+			}
+		});
+		btn4.setBackground(Color.PINK);
+		btn4.setFont(new Font("Century", Font.PLAIN, 50));
+		btn4.setBounds(94, 296, 100, 100);
+		player.getContentPane().add(btn4);
+
+		//Button btn5 = new Button("");
+		btn5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (btn5.getLabel() == "") {
+					move = setLable(btn5, move);
+					board.playBoard(5, move);
+					isWin = board.checkBoard();
+					if (isWin != ' ')
+						Win(isWin);
+				}
+			}
+		});
+		btn5.setBackground(Color.decode("#87dce6"));
+		btn5.setFont(new Font("Century", Font.PLAIN, 50));
+		btn5.setBounds(200, 296, 100, 100);
+		player.getContentPane().add(btn5);
+
+		//Button btn6 = new Button("");
+		btn6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (btn6.getLabel() == "") {
+					move = setLable(btn6, move);
+					board.playBoard(6, move);
+					isWin = board.checkBoard();
+					if (isWin != ' ')
+						Win(isWin);
+				}
+			}
+		});
+		btn6.setBackground(Color.PINK);
+		btn6.setFont(new Font("Century", Font.PLAIN, 50));
+		btn6.setBounds(306, 296, 100, 100);
+		player.getContentPane().add(btn6);
+
+		//Button btn7 = new Button("");
+		btn7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (btn7.getLabel() == "") {
+					move = setLable(btn7, move);
+					board.playBoard(7, move);
+					isWin = board.checkBoard();
+					if (isWin != ' ')
+						Win(isWin);
+				}
+			}
+		});
+		btn7.setBackground(Color.decode("#87dce6"));
+		btn7.setFont(new Font("Century", Font.PLAIN, 50));
+		btn7.setBounds(94, 402, 100, 100);
+		player.getContentPane().add(btn7);
+
+		//Button btn8 = new Button("");
+		btn8.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (btn8.getLabel() == "") {
+					move = setLable(btn8, move);
+					board.playBoard(8, move);
+					isWin = board.checkBoard();
+					if (isWin != ' ')
+						Win(isWin);
+				}
+			}
+		});
+		btn8.setBackground(Color.PINK);
+		btn8.setFont(new Font("Century", Font.PLAIN, 50));
+		btn8.setBounds(200, 402, 100, 100);
+		player.getContentPane().add(btn8);
+
+		//Button btn9 = new Button("");
+		btn9.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (btn9.getLabel() == "") {
+					move = setLable(btn9, move);
+					board.playBoard(9, move);
+					isWin = board.checkBoard();
+					if (isWin != ' ')
+						Win(isWin);
+				}
+			}
+		});
+		btn9.setBackground(Color.decode("#87dce6"));
+		btn9.setFont(new Font("Century", Font.PLAIN, 50));
+		btn9.setBounds(306, 402, 100, 100);
+		player.getContentPane().add(btn9);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+public int minimax(int depth, Boolean isMaximizing, int alpha, int beta) {
+        char result = checkBoard();
+        if (result != ' ') {
+            if (result == ai)
+                return 10;
+            else if (result == human)
+                return -10;
+            else if (result == 'T')
+                return 0;
+        }
+        if (isMaximizing) {
+            int bestScore = -100;
+            for (int i = 0; i < length; i++) {
+                for (int j = 0; j < length; j++) {
+                    if (board[i][j] == ' ') {
+                        board[i][j] = ai;
+                        int score = minimax(depth + 1, false, alpha, beta);
+                        board[i][j] = ' ';
+                        bestScore = Math.max(score, bestScore);
+                        alpha = Math.max(alpha, bestScore);
+                        if (beta <= alpha) {
+                            break;
+                        }
+                    }
+                }
+            }
+            return bestScore;
+        } else {
+            int bestScore = 100;
+            for (int i = 0; i < length; i++) {
+                for (int j = 0; j < length; j++) {
+                    if (board[i][j] == ' ') {
+                        board[i][j] = human;
+                        int score = minimax(depth + 1, true, alpha, beta);
+                        board[i][j] = ' ';
+                        bestScore = Math.min(score, bestScore);
+                        beta = Math.min(beta, bestScore);
+                        if (beta <= alpha) {
+                            break;
+                        }
+                    }
+                }
+            }
+            return bestScore;
+        }
+    }
+
+
+public int minimax(int depth, Boolean isMaximizing) {
+        char result = checkBoard();
+        if (result != ' ') {
+            if (result == ai)
+                return 10;
+            else if (result == human)
+                return -10;
+            else if (result == 'T')
+                return 0;
+        }
+        if (isMaximizing) {
+            int bestScore = -100;
+            for (int i = 0; i < length; i++) {
+                for (int j = 0; j < length; j++) {
+                    if (board[i][j] == ' ') {
+                        board[i][j] = ai;
+                        int score = minimax(depth + 1, false);
+                        board[i][j] = ' ';
+                        bestScore = Math.max(score, bestScore);
+                    }
+                }
+            }
+            return bestScore;
+        } else {
+            int bestScore = 100;
+            for (int i = 0; i < length; i++) {
+                for (int j = 0; j < length; j++) {
+                    if (board[i][j] == ' ') {
+                        board[i][j] = human;
+                        int score = minimax(depth + 1, true);
+                        board[i][j] = ' ';
+                        bestScore = Math.min(score, bestScore);
+                    }
+                }
+            }
+            return bestScore;
+        }
+    }
